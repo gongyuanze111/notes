@@ -1,0 +1,490 @@
+nohup: ignoring input
+08/07 11:08:11 - mmengine - WARNING - Use random port: 23177
+[2025-08-07 11:08:12,551] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+W0807 11:08:15.813000 60815 site-packages/torch/distributed/run.py:792] 
+W0807 11:08:15.813000 60815 site-packages/torch/distributed/run.py:792] *****************************************
+W0807 11:08:15.813000 60815 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0807 11:08:15.813000 60815 site-packages/torch/distributed/run.py:792] *****************************************
+[2025-08-07 11:08:18,323] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-08-07 11:08:18,357] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/utils/dl_utils/setup_env.py:56: UserWarning: Setting MKL_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+[2025-08-07 11:08:20,472] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-08-07 11:08:20,473] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/utils/dl_utils/setup_env.py:56: UserWarning: Setting MKL_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed.
+  warnings.warn(
+[2025-08-07 11:08:20,567] [INFO] [comm.py:652:init_distributed] cdb=None
+08/07 11:08:20 - mmengine - INFO - 
+------------------------------------------------------------
+System environment:
+    sys.platform: linux
+    Python: 3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]
+    CUDA available: True
+    MUSA available: False
+    numpy_random_seed: 1171159653
+    GPU 0,1: NVIDIA A100-SXM4-80GB
+    CUDA_HOME: /usr/local/cuda
+    NVCC: Cuda compilation tools, release 12.4, V12.4.131
+    GCC: gcc (GCC) 10.2.1 20200825 (Alibaba 10.2.1-3.8 2.32)
+    PyTorch: 2.6.0+cu124
+    PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201703
+  - Intel(R) oneAPI Math Kernel Library Version 2024.2-Product Build 20240605 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v3.5.3 (Git Hash 66f0cb9eb66affd2da3bf5f8d897376f04aae6af)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX512
+  - CUDA Runtime 12.4
+  - NVCC architecture flags: -gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86;-gencode;arch=compute_90,code=sm_90
+  - CuDNN 90.2  (built against CUDA 12.5)
+    - Built with CuDNN 90.1
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, COMMIT_SHA=2236df1770800ffea5697b11b0bb0d910b2e59e1, CUDA_VERSION=12.4, CUDNN_VERSION=9.1.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -D_GLIBCXX_USE_CXX11_ABI=0 -fabi-version=11 -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -DNDEBUG -DUSE_KINETO -DLIBKINETO_NOROCTRACER -DLIBKINETO_NOXPUPTI=ON -DUSE_FBGEMM -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -O2 -fPIC -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Werror=bool-operation -Wnarrowing -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wno-unused-parameter -Wno-strict-overflow -Wno-strict-aliasing -Wno-stringop-overflow -Wsuggest-override -Wno-psabi -Wno-error=old-style-cast -Wno-missing-braces -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, TORCH_VERSION=2.6.0, USE_CUDA=ON, USE_CUDNN=ON, USE_CUSPARSELT=1, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_GLOO=ON, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=1, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, USE_ROCM_KERNEL_ASSERT=OFF, 
+
+    TorchVision: 0.21.0+cu124
+    OpenCV: 4.12.0
+    MMEngine: 0.10.6
+
+Runtime environment:
+    launcher: pytorch
+    randomness: {'seed': None, 'deterministic': False}
+    cudnn_benchmark: False
+    mp_cfg: {'mp_start_method': 'fork', 'opencv_num_threads': 0}
+    dist_cfg: {'backend': 'nccl'}
+    seed: None
+    deterministic: False
+    Distributed launcher: pytorch
+    Distributed training: True
+    GPU number: 2
+------------------------------------------------------------
+
+08/07 11:08:20 - mmengine - INFO - Config:
+SYSTEM = ''
+accumulative_counts = 16
+batch_size = 16
+betas = (
+    0.9,
+    0.999,
+)
+custom_hooks = [
+    dict(
+        tokenizer=dict(
+            eos_token='<|endoftext|>',
+            padding_side='right',
+            pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+            trust_remote_code=True,
+            type='transformers.AutoTokenizer.from_pretrained'),
+        type='xtuner.engine.hooks.DatasetInfoHook'),
+    dict(
+        evaluation_inputs=[
+            '请给我介绍五个上海的景点',
+            'Please tell me five scenic spots in Shanghai',
+        ],
+        every_n_iters=500,
+        prompt_template='xtuner.utils.PROMPT_TEMPLATE.qwen_chat',
+        system='',
+        tokenizer=dict(
+            eos_token='<|endoftext|>',
+            padding_side='right',
+            pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+            trust_remote_code=True,
+            type='transformers.AutoTokenizer.from_pretrained'),
+        type='xtuner.engine.hooks.EvaluateChatHook'),
+]
+data_files = [
+    'SWE-bench/xml-00000-of-00008.json',
+    'SWE-bench/xml-00001-of-00008.json',
+    'SWE-bench/xml-00002-of-00008.json',
+    'SWE-bench/xml-00003-of-00008.json',
+    'SWE-bench/xml-00004-of-00008.json',
+    'SWE-bench/xml-00005-of-00008.json',
+    'SWE-bench/xml-00006-of-00008.json',
+    'SWE-bench/xml-00007-of-00008.json',
+]
+dataloader_num_workers = 0
+default_hooks = dict(
+    checkpoint=dict(
+        by_epoch=False,
+        interval=500,
+        max_keep_ckpts=2,
+        type='mmengine.hooks.CheckpointHook'),
+    logger=dict(
+        interval=10,
+        log_metric_by_epoch=False,
+        type='mmengine.hooks.LoggerHook'),
+    param_scheduler=dict(type='mmengine.hooks.ParamSchedulerHook'),
+    sampler_seed=dict(type='mmengine.hooks.DistSamplerSeedHook'),
+    timer=dict(type='mmengine.hooks.IterTimerHook'))
+env_cfg = dict(
+    cudnn_benchmark=False,
+    dist_cfg=dict(backend='nccl'),
+    mp_cfg=dict(mp_start_method='fork', opencv_num_threads=0))
+evaluation_freq = 500
+evaluation_inputs = [
+    '请给我介绍五个上海的景点',
+    'Please tell me five scenic spots in Shanghai',
+]
+launcher = 'pytorch'
+load_from = None
+log_level = 'INFO'
+log_processor = dict(by_epoch=False)
+lr = 0.0002
+max_epochs = 1
+max_length = 2048
+max_norm = 1
+model = dict(
+    llm=dict(
+        pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+        quantization_config=dict(
+            bnb_4bit_compute_dtype='torch.float16',
+            bnb_4bit_quant_type='nf4',
+            bnb_4bit_use_double_quant=True,
+            llm_int8_has_fp16_weight=False,
+            llm_int8_threshold=6.0,
+            load_in_4bit=True,
+            load_in_8bit=False,
+            type='transformers.BitsAndBytesConfig'),
+        torch_dtype='torch.float16',
+        trust_remote_code=True,
+        type='transformers.AutoModelForCausalLM.from_pretrained'),
+    lora=dict(
+        bias='none',
+        lora_alpha=16,
+        lora_dropout=0.1,
+        r=64,
+        task_type='CAUSAL_LM',
+        type='peft.LoraConfig'),
+    type='xtuner.model.SupervisedFinetune',
+    use_varlen_attn=False)
+optim_type = 'torch.optim.AdamW'
+optim_wrapper = dict(
+    optimizer=dict(
+        betas=(
+            0.9,
+            0.999,
+        ),
+        lr=0.0002,
+        type='torch.optim.AdamW',
+        weight_decay=0),
+    type='DeepSpeedOptimWrapper')
+pack_to_max_length = True
+param_scheduler = [
+    dict(
+        begin=0,
+        by_epoch=True,
+        convert_to_iter_based=True,
+        end=0.03,
+        start_factor=1e-05,
+        type='mmengine.optim.LinearLR'),
+    dict(
+        begin=0.03,
+        by_epoch=True,
+        convert_to_iter_based=True,
+        end=1,
+        eta_min=0.0,
+        type='mmengine.optim.CosineAnnealingLR'),
+]
+pretrained_model_name_or_path = 'Qwen3-Coder-30B-A3B-Instruct'
+prompt_template = 'xtuner.utils.PROMPT_TEMPLATE.qwen_chat'
+randomness = dict(deterministic=False, seed=None)
+resume = False
+runner_type = 'FlexibleRunner'
+save_steps = 500
+save_total_limit = 2
+strategy = dict(
+    config=dict(
+        bf16=dict(enabled=True),
+        fp16=dict(enabled=False, initial_scale_power=16),
+        gradient_accumulation_steps='auto',
+        gradient_clipping='auto',
+        train_micro_batch_size_per_gpu='auto',
+        zero_allow_untested_optimizer=True,
+        zero_force_ds_cpu_optimizer=False,
+        zero_optimization=dict(overlap_comm=True, stage=2)),
+    exclude_frozen_parameters=True,
+    gradient_accumulation_steps=16,
+    gradient_clipping=1,
+    sequence_parallel_size=1,
+    train_micro_batch_size_per_gpu=16,
+    type='xtuner.engine.DeepSpeedStrategy')
+tokenizer = dict(
+    eos_token='<|endoftext|>',
+    padding_side='right',
+    pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+    trust_remote_code=True,
+    type='transformers.AutoTokenizer.from_pretrained')
+train_cfg = dict(max_epochs=1, type='xtuner.engine.runner.TrainLoop')
+train_dataloader = dict(
+    batch_size=16,
+    collate_fn=dict(
+        type='xtuner.dataset.collate_fns.default_collate_fn',
+        use_varlen_attn=False),
+    dataset=dict(
+        dataset=dict(
+            data_files=[
+                'SWE-bench/xml-00000-of-00008.json',
+                'SWE-bench/xml-00001-of-00008.json',
+                'SWE-bench/xml-00002-of-00008.json',
+                'SWE-bench/xml-00003-of-00008.json',
+                'SWE-bench/xml-00004-of-00008.json',
+                'SWE-bench/xml-00005-of-00008.json',
+                'SWE-bench/xml-00006-of-00008.json',
+                'SWE-bench/xml-00007-of-00008.json',
+            ],
+            path='json',
+            type='datasets.load_dataset'),
+        dataset_map_fn='xtuner.dataset.map_fns.openai_map_fn',
+        max_length=2048,
+        pack_to_max_length=True,
+        remove_unused_columns=True,
+        shuffle_before_pack=True,
+        template_map_fn=dict(
+            template='xtuner.utils.PROMPT_TEMPLATE.qwen_chat',
+            type='xtuner.dataset.map_fns.template_map_fn_factory'),
+        tokenizer=dict(
+            eos_token='<|endoftext|>',
+            padding_side='right',
+            pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+            trust_remote_code=True,
+            type='transformers.AutoTokenizer.from_pretrained'),
+        type='xtuner.dataset.process_hf_dataset',
+        use_varlen_attn=False),
+    num_workers=0,
+    sampler=dict(shuffle=True, type='mmengine.dataset.DefaultSampler'))
+train_dataset = dict(
+    dataset=dict(
+        data_files=[
+            'SWE-bench/xml-00000-of-00008.json',
+            'SWE-bench/xml-00001-of-00008.json',
+            'SWE-bench/xml-00002-of-00008.json',
+            'SWE-bench/xml-00003-of-00008.json',
+            'SWE-bench/xml-00004-of-00008.json',
+            'SWE-bench/xml-00005-of-00008.json',
+            'SWE-bench/xml-00006-of-00008.json',
+            'SWE-bench/xml-00007-of-00008.json',
+        ],
+        path='json',
+        type='datasets.load_dataset'),
+    dataset_map_fn='xtuner.dataset.map_fns.openai_map_fn',
+    max_length=2048,
+    pack_to_max_length=True,
+    remove_unused_columns=True,
+    shuffle_before_pack=True,
+    template_map_fn=dict(
+        template='xtuner.utils.PROMPT_TEMPLATE.qwen_chat',
+        type='xtuner.dataset.map_fns.template_map_fn_factory'),
+    tokenizer=dict(
+        eos_token='<|endoftext|>',
+        padding_side='right',
+        pretrained_model_name_or_path='Qwen3-Coder-30B-A3B-Instruct',
+        trust_remote_code=True,
+        type='transformers.AutoTokenizer.from_pretrained'),
+    type='xtuner.dataset.process_hf_dataset',
+    use_varlen_attn=False)
+use_varlen_attn = False
+visualizer = None
+warmup_ratio = 0.03
+weight_decay = 0
+work_dir = './work_dirs/qwen_72b_qlora_custom_sft_e1_copy'
+
+08/07 11:08:20 - mmengine - WARNING - Failed to search registry with scope "mmengine" in the "builder" registry tree. As a workaround, the current "builder" registry in "xtuner" is used to build instance. This may cause unexpected failure when running the built modules. Please check whether "mmengine" is a correct scope, or whether the registry is initialized.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+[rank1]:     response.raise_for_status()
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+[rank1]:     raise HTTPError(http_error_msg, response=self)
+[rank1]: requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/Qwen3-Coder-30B-A3B-Instruct/resolve/main/tokenizer_config.json
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 476, in cached_files
+[rank1]:     hf_hub_download(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+[rank1]:     return _hf_hub_download_to_cache_dir(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1117, in _hf_hub_download_to_cache_dir
+[rank1]:     _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1658, in _raise_on_head_call_error
+[rank1]:     raise head_call_error
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1546, in _get_metadata_or_catch_error
+[rank1]:     metadata = get_hf_file_metadata(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1463, in get_hf_file_metadata
+[rank1]:     r = _request_wrapper(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 286, in _request_wrapper
+[rank1]:     response = _request_wrapper(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 310, in _request_wrapper
+[rank1]:     hf_raise_for_status(response)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 459, in hf_raise_for_status
+[rank1]:     raise _format(RepositoryNotFoundError, message, response) from e
+[rank1]: huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-689418a5-05b1943e4767530c2e76965f;a6574adb-be96-4a51-9b11-cd39994a6318)
+
+[rank1]: Repository Not Found for url: https://huggingface.co/Qwen3-Coder-30B-A3B-Instruct/resolve/main/tokenizer_config.json.
+[rank1]: Please make sure you specified the correct `repo_id` and `repo_type`.
+[rank1]: If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+[rank1]: Invalid username or password.
+
+[rank1]: The above exception was the direct cause of the following exception:
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/data/gyz/xtuner/xtuner/tools/train.py", line 392, in <module>
+[rank1]:     main()
+[rank1]:   File "/data/gyz/xtuner/xtuner/tools/train.py", line 385, in main
+[rank1]:     runner = RUNNERS.build(cfg)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank1]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 198, in build_runner_from_cfg
+[rank1]:     runner = runner_cls.from_cfg(args)  # type: ignore
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 423, in from_cfg
+[rank1]:     runner = cls(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 403, in __init__
+[rank1]:     self.register_hooks(default_hooks, custom_hooks)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1430, in register_hooks
+[rank1]:     self.register_custom_hooks(custom_hooks)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1410, in register_custom_hooks
+[rank1]:     self.register_hook(hook)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1310, in register_hook
+[rank1]:     hook_obj = HOOKS.build(hook)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank1]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 123, in build_from_cfg
+[rank1]:     obj = obj_cls(**args)  # type: ignore
+[rank1]:   File "/data/gyz/xtuner/xtuner/engine/hooks/dataset_info_hook.py", line 23, in __init__
+[rank1]:     self.tokenizer = BUILDER.build(tokenizer)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank1]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 123, in build_from_cfg
+[rank1]:     obj = obj_cls(**args)  # type: ignore
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1047, in from_pretrained
+[rank1]:     tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 879, in get_tokenizer_config
+[rank1]:     resolved_config_file = cached_file(
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 318, in cached_file
+[rank1]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank1]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 508, in cached_files
+[rank1]:     raise OSError(
+[rank1]: OSError: Qwen3-Coder-30B-A3B-Instruct is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+[rank1]: If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 409, in hf_raise_for_status
+[rank0]:     response.raise_for_status()
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/requests/models.py", line 1026, in raise_for_status
+[rank0]:     raise HTTPError(http_error_msg, response=self)
+[rank0]: requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://huggingface.co/Qwen3-Coder-30B-A3B-Instruct/resolve/main/tokenizer_config.json
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 476, in cached_files
+[rank0]:     hf_hub_download(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1010, in hf_hub_download
+[rank0]:     return _hf_hub_download_to_cache_dir(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1117, in _hf_hub_download_to_cache_dir
+[rank0]:     _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1658, in _raise_on_head_call_error
+[rank0]:     raise head_call_error
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1546, in _get_metadata_or_catch_error
+[rank0]:     metadata = get_hf_file_metadata(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 114, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1463, in get_hf_file_metadata
+[rank0]:     r = _request_wrapper(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 286, in _request_wrapper
+[rank0]:     response = _request_wrapper(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 310, in _request_wrapper
+[rank0]:     hf_raise_for_status(response)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/huggingface_hub/utils/_http.py", line 459, in hf_raise_for_status
+[rank0]:     raise _format(RepositoryNotFoundError, message, response) from e
+[rank0]: huggingface_hub.errors.RepositoryNotFoundError: 401 Client Error. (Request ID: Root=1-689418a5-15eb0e2d31f94b7d7cc5655b;0363eff2-0dca-4efb-972c-36419a110902)
+
+[rank0]: Repository Not Found for url: https://huggingface.co/Qwen3-Coder-30B-A3B-Instruct/resolve/main/tokenizer_config.json.
+[rank0]: Please make sure you specified the correct `repo_id` and `repo_type`.
+[rank0]: If you are trying to access a private or gated repo, make sure you are authenticated. For more details, see https://huggingface.co/docs/huggingface_hub/authentication
+[rank0]: Invalid username or password.
+
+[rank0]: The above exception was the direct cause of the following exception:
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/data/gyz/xtuner/xtuner/tools/train.py", line 392, in <module>
+[rank0]:     main()
+[rank0]:   File "/data/gyz/xtuner/xtuner/tools/train.py", line 385, in main
+[rank0]:     runner = RUNNERS.build(cfg)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank0]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 198, in build_runner_from_cfg
+[rank0]:     runner = runner_cls.from_cfg(args)  # type: ignore
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 423, in from_cfg
+[rank0]:     runner = cls(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 403, in __init__
+[rank0]:     self.register_hooks(default_hooks, custom_hooks)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1430, in register_hooks
+[rank0]:     self.register_custom_hooks(custom_hooks)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1410, in register_custom_hooks
+[rank0]:     self.register_hook(hook)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/runner/_flexible_runner.py", line 1310, in register_hook
+[rank0]:     hook_obj = HOOKS.build(hook)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank0]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 123, in build_from_cfg
+[rank0]:     obj = obj_cls(**args)  # type: ignore
+[rank0]:   File "/data/gyz/xtuner/xtuner/engine/hooks/dataset_info_hook.py", line 23, in __init__
+[rank0]:     self.tokenizer = BUILDER.build(tokenizer)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/registry.py", line 570, in build
+[rank0]:     return self.build_func(cfg, *args, **kwargs, registry=self)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/mmengine/registry/build_functions.py", line 123, in build_from_cfg
+[rank0]:     obj = obj_cls(**args)  # type: ignore
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 1047, in from_pretrained
+[rank0]:     tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/models/auto/tokenization_auto.py", line 879, in get_tokenizer_config
+[rank0]:     resolved_config_file = cached_file(
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 318, in cached_file
+[rank0]:     file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+[rank0]:   File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/transformers/utils/hub.py", line 508, in cached_files
+[rank0]:     raise OSError(
+[rank0]: OSError: Qwen3-Coder-30B-A3B-Instruct is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+[rank0]: If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+[rank0]:[W807 11:08:21.960759637 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+[rank1]:[W807 11:08:22.731514124 ProcessGroupNCCL.cpp:1496] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+E0807 11:08:22.638000 60815 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 60851) of binary: /data/gyz/envs/xtuner-env/bin/python3.1
+Traceback (most recent call last):
+  File "/data/gyz/envs/xtuner-env/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/data/gyz/envs/xtuner-env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/data/gyz/xtuner/xtuner/tools/train.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2025-08-07_11:08:22
+  host      : iZj6c7wby0ebe83jpu3yh7Z
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 60852)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2025-08-07_11:08:22
+  host      : iZj6c7wby0ebe83jpu3yh7Z
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 60851)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
